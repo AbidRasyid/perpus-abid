@@ -1,0 +1,298 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 3%;
+    background-color: #f5f5f5;
+    color: black;
+}   
+
+header{
+    grid-area: header;
+    font-size: 24px;
+    font-family:"Poppins", sans-serif;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+    align-items: center;
+}
+
+header h1{
+    margin-bottom: 0;
+}
+
+aside{
+    position: fixed;
+    left: 0;
+    top:0;
+    grid-area: sidebar;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+aside button{
+    margin: 20px;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+
+li button a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+li button{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+    margin: 7% 0;
+    border: 0;
+    transition: background-color 0.3s;
+    padding: 10px;
+    color: black;
+    width: 100%;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    
+}
+
+li button:hover{
+    background-color: black;
+    color: white;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+    width: 97%;
+    border-radius: 25px;
+    font-family: 'inter', sans-serif;
+    cursor: default;
+    overflow-y: auto;
+}
+main div{
+    margin-inline: 2.5%;
+    width: 95%;
+    height: auto;
+}
+footer{
+    grid-area: footer;
+    font-family: 'inter', sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+td .deletebutton{
+      appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.button{
+    padding: 10px 15px;
+    font-family: poppins, sans-serif;
+    border: #010101 solid 2px;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    padding: 10px;
+}
+
+.bw-rounded-theme main form {
+    width: min(720px, 100%);
+    margin: 12px 0;
+    padding: 24px;
+    border: none;
+    border-radius: 22px;
+    background-color: #ffffff;
+}
+
+.bw-rounded-theme main form table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+.bw-rounded-theme main form table td {
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.bw-rounded-theme main form table td:first-child {
+    width: 180px;
+    font-weight: 600;
+    color: #010101;
+    padding-right: 14px;
+}
+
+.bw-rounded-theme main form label {
+    font-weight: 600;
+    color: #010101;
+    display: inline-block;
+    margin: 8px 0 6px;
+}
+
+.bw-rounded-theme main form input:not([type="submit"]):not([type="hidden"]),
+.bw-rounded-theme main form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #010101;
+    border-radius: 14px;
+    background-color: #ffffff;
+    color: #010101;
+    font-size: 15px;
+    font-family: 'inter', sans-serif;
+    outline: none;
+}
+
+.bw-rounded-theme main form input:not([type="submit"]):not([type="hidden"]):focus,
+.bw-rounded-theme main form select:focus {
+    background-color: #f7f7f7;
+}
+
+.bw-rounded-theme main form .submit,
+.bw-rounded-theme main form input[type="submit"],
+.bw-rounded-theme main form button[type="submit"] {
+    margin-top: 16px;
+    padding: 11px 18px;
+    border: 1px solid #010101;
+    border-radius: 999px;
+    background-color: #010101;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bw-rounded-theme main form .submit:hover,
+.bw-rounded-theme main form input[type="submit"]:hover,
+.bw-rounded-theme main form button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #010101;
+}
+
+/* Login page start */
+
+.auth-body{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    grid-template-areas: none;
+    grid-template-columns: none;
+    grid-template-rows: none;
+}
+
+.auth-body div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: relative;
+    padding: 3.5%;
+    width: 20%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 25px;
+    font-family: 'inter', sans-serif;
+}
+
+.auth-body div h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+
+.auth-body form input:not(.submit), 
+.auth-body form select {
+    width: 100%;
+    height: 30px;
+    border-radius: 25px;
+    border: 0;
+    background-color: #e5e5e5;
+}
+
+.auth-body div form label, .auth-body div form input, .auth-body div form select{
+    margin-bottom: 8%;
+}
+
+.submit{
+    margin-top: 10%;
+    width: 100%;
+    height: 45px;
+    align-self: center;
+    border-radius: 45px;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid black;
+    font-size:20px;
+    font-weight: 600;
+}
+
+.submit:hover{
+  transform: scale(1.05);
+  background-color: black;
+  border-style: none;
+  color: #fff;
+}
+
+/* Login page end */
+
